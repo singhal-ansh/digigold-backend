@@ -51,14 +51,16 @@ public class SecurityConfig {
             .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
                 // Public endpoints
-                .requestMatchers(
-                    "/auth/**",
-                    "/gold-prices/live",
-                    "/swagger-ui/**",
-                    "/swagger-ui.html",
-                    "/api-docs/**",
-                    "/actuator/health"
-                ).permitAll()
+                    .requestMatchers(
+                            "/auth/**",
+                            "/gold-prices/live",
+                            "/swagger-ui/**",
+                            "/swagger-ui.html",
+                            "/v3/api-docs/**",
+                            "/api-docs/**",
+                            "/actuator/health",
+                            "/actuator/**"
+                    ).permitAll()
                 // Admin-only
                 .requestMatchers("/admin/**").hasRole("ADMIN")
                 // Everything else requires authentication
