@@ -1,4 +1,4 @@
-# Jos Alukkas DigiGold — Backend
+# FinGold - Backend
 
 Spring Boot REST API with JWT authentication, PostgreSQL, and Razorpay payment integration.
 
@@ -7,7 +7,7 @@ Spring Boot REST API with JWT authentication, PostgreSQL, and Razorpay payment i
 ### Prerequisites
 - Java 17+
 - PostgreSQL running locally (port 5432)
-- Create a database: `CREATE DATABASE digigold_db;`
+- Create a database: `CREATE DATABASE fingold_db;`
 
 ### Run
 ```bash
@@ -50,7 +50,7 @@ Swagger UI: `http://localhost:8080/api/v1/swagger-ui.html`
 
 ## Default Admin Account
 Created automatically by DataSeeder on first run:
-- Email: `admin@josalukkas.com`
+- Email: `admin@fingold.com`
 - Password: `Admin@1234`
 
 Set a new gold price via `POST /gold-prices` (admin) before users can buy/sell.

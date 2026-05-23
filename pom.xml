@@ -11,12 +11,12 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.josalukkas</groupId>
-    <artifactId>digigold-backend</artifactId>
+    <groupId>com.fingold</groupId>
+    <artifactId>fingold-backend</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    <name>Jos Alukkas DigiGold Backend</name>
-    <description>Spring Boot REST API backend for Jos Alukkas DigiGold platform</description>
+    <name>FinGold Backend</name>
+    <description>Spring Boot REST API backend for FinGold platform</description>
 
     <properties>
         <java.version>21</java.version>
